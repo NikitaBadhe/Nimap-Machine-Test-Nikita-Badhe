@@ -1,15 +1,10 @@
 package com.Product_Management_System.category.model;
 
-import java.util.List;
-
-import com.Product_Management_System.model.Product;
-
-import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.OneToMany;
+
 
 @Entity
 public class Category {
@@ -21,8 +16,6 @@ public class Category {
 	private String categoryDescription;
 	private String categoryMaterial;
 	
-//	@OneToMany(mappedBy = "category", cascade = CascadeType.ALL)
-//    private List<Product> products;
 
 	public Category() {
 		super();
@@ -70,13 +63,5 @@ public class Category {
 		this.categoryMaterial = categoryMaterial;
 	}
 
-//	public List<Product> getProducts() {
-//		return products;
-//	}
-//
-//	public void setProducts(List<Product> products) {
-//		this.products = products;
-//	}
-//	
 
 }
